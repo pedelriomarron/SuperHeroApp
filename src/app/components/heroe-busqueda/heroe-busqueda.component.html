@@ -1,0 +1,11 @@
+<h1>Heroes <small>Buscar: {{busqueda}}</small></h1>
+<hr>
+
+<div *ngIf="heroes.length==0" class="alert alert-warning" role="alert">
+    El superheroe bsucado <a class="alert-link">{{busqueda}}</a> no esta en neustra base datos.
+</div>
+
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="heroe" [id]="heroe.id" *ngFor="let heroe of heroes"></app-heroe-tarjeta>
+
+</div>
