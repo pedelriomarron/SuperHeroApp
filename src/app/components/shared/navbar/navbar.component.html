@@ -1,12 +1,12 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--Navbar -->
+<nav class="mb-4 navbar navbar-expand-lg navbar-dark red darken-2">
     <a class="navbar-brand" href="#">
         <img src="assets/img/A-64.png" width="30" height="30" alt="">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText1" aria-controls="navbarText1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText1">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item" routerLinkActive="active">
                 <a class="nav-link" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
@@ -15,13 +15,13 @@
                 <a class="nav-link" [routerLink]="['heroes']">Heroes</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link" [routerLink]="['about']">About</a>
+                <a class="nav-link" [routerLink]="['about']">Sobre Mí</a>
             </li>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Buscar" (keyup)="buscarHeroe(buscarTexto.value)" #buscarTexto>
-            <button (click)="buscarHeroe(buscarTexto.value)" class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar Heroes</button>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Buscar" (keyup)="buscarHeroe(buscarTexto.value)" #buscarTexto>
+
         </form>
     </div>
 </nav>
