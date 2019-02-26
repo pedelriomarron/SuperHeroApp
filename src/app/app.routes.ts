@@ -8,12 +8,14 @@ import { HeroeBusquedaComponent } from './components/heroe-busqueda/heroe-busque
 
 
 const routes: Routes = [
+  { path: '', component: HeroesComponent },
     { path: 'home', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'heroes', component: HeroesComponent },
     { path: 'heroe/:id', component: HeroeComponent },
     { path: 'buscar/:slug', component: HeroeBusquedaComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'heroes' }
+    {path: '**', component: HeroesComponent}
+
 ];
 
 
