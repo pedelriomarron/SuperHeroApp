@@ -2,7 +2,7 @@
 
 Web creada a modo de aprendizaje con angular.
 
-[https://superheroapp-232823.appspot.com/heroes](https://superheroapp-232823.appspot.com/heroes)
+[https://superheroapp-232823.appspot.com](https://superheroapp-232823.appspot.com)
 
 
 
